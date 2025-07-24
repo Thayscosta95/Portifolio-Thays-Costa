@@ -1,0 +1,12 @@
+<nav class="menu-nav">
+  <ul>
+    <li><a [routerLink]="['/home']" fragment="home">Início</a></li>
+    <li><a [routerLink]="['/projetos']" fragment="projetos">Projetos</a></li>
+    <li><a [routerLink]="['/sobre']" fragment="sobre">Sobre Mim</a></li>
+    <li><a [routerLink]="['/contato']" fragment="contato">Contato</a></li>
+  </ul>
+</nav>
+
+<div>
+  <router-outlet></router-outlet>
+</div>

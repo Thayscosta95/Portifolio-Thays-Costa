@@ -1,0 +1,38 @@
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 60px 20px;
+  background-color: #111;
+  padding: 50px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(255, 105, 180, 0.2);
+}
+
+
+.titulo-home {
+  max-width: 500px;
+  text-align: left;
+}
+
+.titulo-home h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  color: #fff;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.titulo-home h2 {
+  text-decoration: none;
+  color: #FF69B4;
+  font-weight: bold;
+  font-size: 3rem;
+  transition: color 0.3s ease;
+}
+
+.titulo-home a:hover {
+  color: #fff;
+}

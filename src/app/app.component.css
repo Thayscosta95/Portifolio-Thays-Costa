@@ -1,0 +1,24 @@
+.menu-nav{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.menu-nav ul {
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+  gap: 60px; /* espaço entre os links */
+}
+
+.menu-nav li a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+.menu-nav li a:hover {
+  color: #FF69B4;
+}
+
+
