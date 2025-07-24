@@ -1,59 +1,39 @@
-# Portfolio
+# 💻 Portfólio — Thays Costa
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
+Bem-vindo(a) ao meu portfólio pessoal desenvolvido com Angular!  
+Aqui você encontrará os projetos que mais representam minha trajetória como desenvolvedora front-end, além das tecnologias que fazem parte do meu dia a dia profissional.
 
-## Development server
+---
 
-To start a local development server, run:
+## ✨ Sobre Mim
+
+Sou Thays Costa, apaixonada por transformar ideias em interfaces.  
+Trabalho com foco em performance, responsividade e acessibilidade — tudo com carinho e atenção aos detalhes.
+
+---
+
+## 🚀 Tecnologias Usadas
+
+- **Angular**
+- **TypeScript**
+- **HTML5 / CSS3**
+- **JavaScript**
+
+
+
+---
+
+## 📁 Estrutura do Projeto
+
+Este projeto foi construído utilizando Angular standalone components e segue uma arquitetura modular.  
+Está dividido em seções como **Início**, **Projetos**, **Sobre Mim** e **Contato** — com animações, carrossel de tecnologias e tema escuro elegante.
+
+---
+
+## 🛠️ Como rodar localmente
 
 ```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
+npm install
 ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
