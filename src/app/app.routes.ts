@@ -8,6 +8,7 @@ import { ConversorMoedasComponent } from './componentes/projetos/ver-projetos/co
 import { JokenpoComponent } from './componentes/projetos/ver-projetos/jokenpo/jokenpo.component';
 import { MarioServicosComponent } from './componentes/projetos/ver-projetos/mario-servicos/mario-servicos.component';
 import { MemotecaComponent } from './componentes/projetos/ver-projetos/memoteca/memoteca.component';
+import { LashComponent } from './componentes/projetos/ver-projetos/lash/lash.component';
 
 export const routes: Routes = [
   {
@@ -47,6 +48,10 @@ export const routes: Routes = [
     path: 'ver-projetos/memoteca',
     component: MemotecaComponent
   },
+  {
+    path: 'ver-projetos/lash',
+    component: LashComponent
+  }
   
 
 ];
