@@ -2,12 +2,14 @@ import { Component } from '@angular/core';
 import { RouterOutlet, Router } from '@angular/router';
 import { RouterModule } from '@angular/router'
 import { CommonModule } from '@angular/common';
+import { LanguageService, SupportedLang } from './services/language.service';
+import { TranslatePipe } from './pipes/translate.pipe';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, RouterModule
+  imports: [RouterOutlet, CommonModule, RouterModule, TranslatePipe
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -15,12 +17,14 @@ import { CommonModule } from '@angular/common';
 export class AppComponent {
   title = 'portfolio';
   menuOpen = false;
-  currentLanguage = 'pt';
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private lang: LanguageService) {}
+
+  get currentLanguage(): SupportedLang {
+    return this.lang.current;
+  }
 
   get showBackground(): boolean {
-    // hide on home path ('' or '/home')
     const url = this.router.url || '';
     return !(url === '/' || url.startsWith('/home'));
   }
@@ -30,7 +34,7 @@ export class AppComponent {
   }
 
   changeLanguage(language: string): void {
-    this.currentLanguage = language;
-    // Implementação de mudança de idioma virá aqui
+    // delegate to language service
+    this.lang.setLanguage(language as SupportedLang);
   }
 }

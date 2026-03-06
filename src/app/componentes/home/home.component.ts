@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { TranslatePipe } from '../../pipes/translate.pipe';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslatePipe],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   animations: [
@@ -25,7 +27,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 export class HomeComponent {
   selectedArea: string | null = null;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private lang: LanguageService) {}
 
   selectArea(area: string): void {
     this.selectedArea = this.selectedArea === area ? null : area;
@@ -57,17 +59,17 @@ export class HomeComponent {
     const areas = {
       front: {
         title: 'Front-end',
-        description: 'Como desenvolvedora Front-end, atuo na criação de interfaces modernas e responsivas, focando sempre na melhor experiência do usuário (UX/UI). Utilizo HTML, CSS, JavaScript e Angular/TypeScript para desenvolver aplicações dinâmicas e performáticas.',
+        description: this.lang.translate('area.front.description'),
         skills: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'Angular', 'Responsive Design']
       },
       back: {
         title: 'Back-end',
-        description: 'No Back-end, possuo experiência sólida com JavaScript e Node.js, desenvolvendo APIs robustas e escaláveis. Trabalho com boas práticas de desenvolvimento, versionamento de código e metodologias ágeis para entregar soluções de qualidade.',
+        description: this.lang.translate('area.back.description'),
         skills: ['JavaScript', 'Node.js', 'REST APIs', 'Git/GitHub', 'Metodologias Ágeis']
       },
       fullstack: {
         title: 'Full-Stack',
-        description: 'Como desenvolvedora Full-Stack, tenho a capacidade de atuar em todo o ciclo de desenvolvimento: desde a criação de interfaces atraentes no Front-end até desenvolvimento robusto no Back-end. Isso me permite ter uma visão holística dos projetos e entregar soluções completas e integradas.',
+        description: this.lang.translate('area.fullstack.description'),
         skills: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'Angular', 'Node.js', 'APIs', 'Git']
       }
     };
