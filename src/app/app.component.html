@@ -34,7 +34,7 @@
 
 <div class="menu-overlay" [class.open]="menuOpen" (click)="toggleMenu()"></div>
 
-<div class="background-decoration">
+<div *ngIf="showBackground" class="background-decoration">
   <img src="/dev1.png" alt="" class="dev-bg dev-bg-1">
   <img src="/dev2.png" alt="" class="dev-bg dev-bg-2">
   <img src="/dev3.png" alt="" class="dev-bg dev-bg-3">
