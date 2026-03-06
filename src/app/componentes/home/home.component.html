@@ -2,10 +2,56 @@
   <div class="home-container">
     <div class="titulo-home">
       <h1>
-        Desenvolvedora<br />
-        <h2><b>Front-End</b></h2>
-      </h1>      
+        Seja bem-vindo(a) ao meu portfólio!"   
+        <br />
+        <h2> Encontre seu perfil ideal </h2>
+
+        <div class="buttons-container">
+          <button class="btn-home" (click)="selectArea('front')" [class.active]="selectedArea === 'front'">
+            <span class="btn-icon">💻</span>
+            Front-end
+          </button>
+          <button class="btn-home" (click)="selectArea('back')" [class.active]="selectedArea === 'back'">
+            <span class="btn-icon">⚙️</span>
+            Back-end
+          </button>
+          <button class="btn-home" (click)="selectArea('fullstack')" [class.active]="selectedArea === 'fullstack'">
+            <span class="btn-icon">🚀</span>
+            Full-Stack
+          </button>
+        </div>
+          
+
+        
+      </h1>
+
+      <!-- Área de informações -->
+      <div class="area-info" *ngIf="areaInfo" [@fadeInOut]>
+        <div class="info-card">
+          <h3 class="area-title">{{ areaInfo.title }}</h3>
+          <p class="area-description">{{ areaInfo.description }}</p>
+          
+          <div class="skills-section">
+            <h4>Habilidades:</h4>
+            <div class="skills-list">
+              <span class="skill-tag" *ngFor="let skill of areaInfo.skills">{{ skill }}</span>
+            </div>
+          </div>
+          
+          <div class="action-buttons">
+            <button class="action-btn projects-btn" (click)="navigateToProjects()">
+              <span class="btn-icon"></span>
+              Ver Projetos
+            </button>
+            <button class="action-btn cv-btn" (click)="downloadCV()">
+              <span class="btn-icon">📄</span>
+              Baixar CV
+            </button>
+          </div>
+        </div>
+      </div>
+      
     </div>
-    <app-tecnologias></app-tecnologias>
+    
   </div>  
 </main>

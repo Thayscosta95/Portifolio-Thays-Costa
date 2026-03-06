@@ -1,11 +1,47 @@
-<nav class="menu-nav">
+<header class="header">
+  <button class="hamburger" (click)="toggleMenu()" [class.active]="menuOpen">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+  </button>
+  <div class="language-selector">
+    <button class="lang-btn" [class.active]="currentLanguage === 'pt'"
+      (click)="changeLanguage('pt')" title="Português">
+      <img src="/bandeira-brasil.png" alt="Brasil" class="flag-icon">
+      <span class="lang-code">PT</span>
+    </button>
+    <button class="lang-btn" [class.active]="currentLanguage === 'en'"
+      (click)="changeLanguage('en')" title="English">
+      <img src="/bandeira-eua.webp" alt="Estados Unidos" class="flag-icon">
+      <span class="lang-code">EN</span>
+    </button>
+    <button class="lang-btn" [class.active]="currentLanguage === 'es'"
+      (click)="changeLanguage('es')" title="Español">
+      <img src="/bandeira-espanha.webp" alt="Espanha" class="flag-icon">
+      <span class="lang-code">ES</span>
+    </button>
+  </div>
+</header>
+
+<nav class="menu-nav" [class.open]="menuOpen">
   <ul>
-    <li><a [routerLink]="['/home']" fragment="home">Início</a></li>
-    <li><a [routerLink]="['/projetos']" fragment="projetos">Projetos</a></li>
-    <li><a [routerLink]="['/sobre']" fragment="sobre">Sobre Mim</a></li>
-    <li><a [routerLink]="['/contato']" fragment="contato">Contato</a></li>
+    <li><a [routerLink]="['/home']" fragment="home" (click)="toggleMenu()">Início</a></li>
+    <li><a [routerLink]="['/projetos']" fragment="projetos" (click)="toggleMenu()">Projetos</a></li>
+    <li><a [routerLink]="['/sobre']" fragment="sobre" (click)="toggleMenu()">Sobre Mim</a></li>
+    <li><a [routerLink]="['/contato']" fragment="contato" (click)="toggleMenu()">Contato</a></li>
   </ul>
 </nav>
+
+<div class="menu-overlay" [class.open]="menuOpen" (click)="toggleMenu()"></div>
+
+<div class="background-decoration">
+  <img src="/dev1.png" alt="" class="dev-bg dev-bg-1">
+  <img src="/dev2.png" alt="" class="dev-bg dev-bg-2">
+  <img src="/dev3.png" alt="" class="dev-bg dev-bg-3">
+  <img src="/dev1.png" alt="" class="dev-bg dev-bg-4">
+  <img src="/dev2.png" alt="" class="dev-bg dev-bg-5">
+  <img src="/dev3.png" alt="" class="dev-bg dev-bg-6">
+</div>
 
 <div>
   <router-outlet></router-outlet>
