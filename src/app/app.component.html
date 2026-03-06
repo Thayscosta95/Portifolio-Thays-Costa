@@ -25,10 +25,10 @@
 
 <nav class="menu-nav" [class.open]="menuOpen">
   <ul>
-    <li><a [routerLink]="['/home']" fragment="home" (click)="toggleMenu()">Início</a></li>
-    <li><a [routerLink]="['/projetos']" fragment="projetos" (click)="toggleMenu()">Projetos</a></li>
-    <li><a [routerLink]="['/sobre']" fragment="sobre" (click)="toggleMenu()">Sobre Mim</a></li>
-    <li><a [routerLink]="['/contato']" fragment="contato" (click)="toggleMenu()">Contato</a></li>
+    <li><a [routerLink]="['/home']" fragment="home" (click)="toggleMenu()">{{ 'nav.home' | translate }}</a></li>
+    <li><a [routerLink]="['/projetos']" fragment="projetos" (click)="toggleMenu()">{{ 'nav.projects' | translate }}</a></li>
+    <li><a [routerLink]="['/sobre']" fragment="sobre" (click)="toggleMenu()">{{ 'nav.about' | translate }}</a></li>
+    <li><a [routerLink]="['/contato']" fragment="contato" (click)="toggleMenu()">{{ 'nav.contact' | translate }}</a></li>
   </ul>
 </nav>
 

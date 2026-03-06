@@ -2,22 +2,22 @@
   <div class="home-container">
     <div class="titulo-home">
       <h1>
-        Seja bem-vindo(a) ao meu portfólio!"   
+        {{ 'home.greeting' | translate }}
         <br />
-        <h2> Encontre seu perfil ideal </h2>
+        <h2>{{ 'home.subtitle' | translate }}</h2>
 
         <div class="buttons-container">
           <button class="btn-home" (click)="selectArea('front')" [class.active]="selectedArea === 'front'">
             <span class="btn-icon">💻</span>
-            Front-end
+            {{ 'button.front' | translate }}
           </button>
           <button class="btn-home" (click)="selectArea('back')" [class.active]="selectedArea === 'back'">
             <span class="btn-icon">⚙️</span>
-            Back-end
+            {{ 'button.back' | translate }}
           </button>
           <button class="btn-home" (click)="selectArea('fullstack')" [class.active]="selectedArea === 'fullstack'">
             <span class="btn-icon">🚀</span>
-            Full-Stack
+            {{ 'button.fullstack' | translate }}
           </button>
         </div>
           
@@ -41,11 +41,11 @@
           <div class="action-buttons">
             <button class="action-btn projects-btn" (click)="navigateToProjects()">
               <span class="btn-icon"></span>
-              Ver Projetos
+              {{ 'button.viewProjects' | translate }}
             </button>
             <button class="action-btn cv-btn" (click)="downloadCV()">
               <span class="btn-icon">📄</span>
-              Baixar CV
+              {{ 'button.downloadCV' | translate }}
             </button>
           </div>
         </div>
