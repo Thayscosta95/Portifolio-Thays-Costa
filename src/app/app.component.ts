@@ -14,4 +14,15 @@ import { CommonModule } from '@angular/common';
 })
 export class AppComponent {
   title = 'portfolio';
+  menuOpen = false;
+  currentLanguage = 'pt';
+
+  toggleMenu(): void {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  changeLanguage(language: string): void {
+    this.currentLanguage = language;
+    // Implementação de mudança de idioma virá aqui
+  }
 }
