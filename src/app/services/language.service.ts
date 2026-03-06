@@ -22,12 +22,14 @@ export class LanguageService {
       'button.fullstack': 'Full-Stack',
       'button.viewProjects': 'Ver Projetos',
       'button.downloadCV': 'Baixar CV',
+      'contact.title': 'Vamos nos conectar!',
       'about.title': 'Sobre Mim',
       'nav.home': 'Início',
       'nav.projects': 'Projetos',
       'nav.about': 'Sobre Mim',
       'nav.contact': 'Contato',
-      // add other keys here
+      'about.description': 'Olá! Seja bem-vindo e bem-vinda à minha página!Me chamo Thays Costa, sou uma desenvolvedora Full-Stack com 3 anos de experiência.Atuo com foco em transformar ideias em experiências digitais. No Front-end, tenho conhecimento em HTML, CSS, JavaScript, Angular e TypeScript. No Back-end, possuo experiência com JavaScript e Node.js.Também tenho experiência com ferramentas como Git e GitHub, o que me permite versionar e colaborar em projetos com eficiência. Já atuei como freelancer e participei de projetos práticos e responsivos, sempre buscando aplicar as melhores soluções focadas na qualidade e usabilidade do usuário. Com experiência em metodologias ágeis como SCRUM, estou constantemente me atualizando na área de tecnologia e me desafiando com novos projetos para aprimorar minhas habilidades. Meu objetivo é desenvolver interfaces funcionais, modernas e que entreguem a melhor experiência ao usuário.'
+      
     },
     en: {
       'home.greeting': 'Welcome to my portfolio!',
@@ -40,11 +42,13 @@ export class LanguageService {
       'button.fullstack': 'Full-Stack',
       'button.viewProjects': 'View Projects',
       'button.downloadCV': 'Download CV',
+      'contact.title': 'Let\'s Connect!',
       'about.title': 'About Me',
       'nav.home': 'Home',
       'nav.projects': 'Projects',
       'nav.about': 'About',
       'nav.contact': 'Contact',
+      'about.description': 'Hello! Welcome to my page! My name is Thays Costa, and I am a Full-Stack Developer with 3 years of experience. I focus on turning ideas into digital experiences.On the front-end, I work with HTML, CSS, JavaScript, Angular, and TypeScript. On the back-end, I have experience with JavaScript and Node.js. I am also familiar with tools like Git and GitHub, which allow me to version and collaborate on projects efficiently. I have worked as a freelancer and participated in practical, responsive projects, always striving to apply the best solutions focused on user quality and usability. With experience in agile methodologies like SCRUM, I am constantly updating my skills in technology and challenging myself with new projects to improve my abilities. My goal is to develop functional, modern interfaces that deliver the best user experience.'
     },
     es: {
       'home.greeting': '¡Bienvenido(a) a mi portafolio!',
@@ -57,11 +61,13 @@ export class LanguageService {
       'button.fullstack': 'Full-Stack',
       'button.viewProjects': 'Ver Proyectos',
       'button.downloadCV': 'Descargar CV',
+      'contact.title': '¡Conectémonos!',
       'about.title': 'Sobre Mí',
-      'nav.home': 'Início',
-      'nav.projects': 'Projetos',
-      'nav.about': 'Sobre Mim',
-      'nav.contact': 'Contato',
+      'nav.home': 'Inicio',
+      'nav.projects': 'Proyectos',
+      'nav.about': 'Acerca de mí',
+      'nav.contact': 'Contacto',
+      'about.description': '¡Hola! ¡Bienvenido/a a mi página! Me llamo Thays Costa y soy desarrolladora Full-Stack con 3 años de experiencia. Me enfoco en transformar ideas en experiencias digitales. En el front-end, trabajo con HTML, CSS, JavaScript, Angular y TypeScript. En el back-end, tengo experiencia con JavaScript y Node.js. También estoy familiarizada con herramientas como Git y GitHub, lo que me permite versionar y colaborar en proyectos de manera eficiente. He trabajado como freelancer y participado en proyectos prácticos y responsivos, siempre buscando aplicar las mejores soluciones enfocadas en la calidad y la usabilidad para el usuario. Con experiencia en metodologías ágiles como SCRUM, me mantengo constantemente actualizada en tecnología y me desafío con nuevos proyectos para mejorar mis habilidades. Mi objetivo es desarrollar interfaces funcionales, modernas y que ofrezcan la mejor experiencia al usuario..'
     }
   };
 
